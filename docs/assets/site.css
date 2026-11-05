@@ -115,7 +115,7 @@ a:hover { text-decoration: underline; text-underline-offset: .2em; }
 .contents a[aria-current] { font-weight: 600; }
 .contents a[aria-current]::after { content: ""; margin-left: auto; align-self: center; width: .4rem; height: .4rem; background: currentColor; border-radius: 50%; }
 .contacts { margin-top: auto; font-size: .89rem; color: var(--cover-muted); }
-.profiles { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: .25rem; }
+.profiles { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: .25rem; padding: 0; list-style: none; }
 .profiles a { text-decoration: underline; text-decoration-color: var(--cover-rule); text-underline-offset: .24em; }
 
 .page {
@@ -139,7 +139,6 @@ main > h1 + p, .teaching > .group:first-of-type > h2 { text-box: trim-start cap 
 .teaching > .group:first-of-type { border: 0; padding-top: 0; margin-top: 0; }
 main > p + p, .fold-copy p + p { margin-top: .95rem; }
 strong { font-weight: 600; }
-.intro { font-size: clamp(1.18rem, 1.52vw, 1.44rem); line-height: 1.5; letter-spacing: -.016em; }
 .bio-folds { margin-top: 2rem; }
 .fold { border-top: 1px solid var(--rule); }
 .bio-folds .fold:last-child { border-bottom: 1px solid var(--rule); }
